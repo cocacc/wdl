@@ -62,8 +62,19 @@ public class UserinfoModel {
     private String wxPhone;
 
     private String flag;
+    
+    private String password;
+    
 
-    public Integer getId() {
+    public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Integer getId() {
         return id;
     }
 

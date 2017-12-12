@@ -186,7 +186,7 @@ public class SubscribeHandler  implements WxMessageHandler  {
 			UUID uuid=UUID.randomUUID();
 	        String str = uuid.toString(); 
 	        
-	        System.out.println(mAddUserinfoModel);
+	        utility.Log.logger.error("Subscribe:"+mAddUserinfoModel);
 	        
 			mAddUserinfoModel.setUserSecret(str.replace("-", ""));
 			
@@ -214,12 +214,13 @@ public class SubscribeHandler  implements WxMessageHandler  {
 					SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					mAddUserinfoModel.setUpdateDttm(df.format(new Date()));
 					//更新
-					System.out.println("更新UID："+mAddUserinfoModel.getUserUid()+"更新MegerKey"+mAddUserinfoModel.getMergeKey());
+					utility.Log.logger.error("Subscribe:更新UID："+mAddUserinfoModel.getUserUid()+"更新MegerKey"+mAddUserinfoModel.getMergeKey());
 					userinfoModelMapper.updateAgentByUserUid(mAddUserinfoModel);
 				}
 			}
 		//xmlOutMsg = WxXmlOutMessage.TEXT().content("欢迎关注 玩到老 旅游公众号").toUser(wxMessage.getFromUserName()).fromUser(wxMessage.getToUserName()).build();
-        return xmlOutMsg;
+			utility.Log.logger.error("Subscribe:"+WxXmlOutMessage.TEXT().toString());
+			return xmlOutMsg;
 		}
         return null;
     }

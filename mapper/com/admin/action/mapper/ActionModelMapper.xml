@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.action.mapper.ActionModelMapper">
+  <resultMap id="BaseResultMap" type="com.admin.action.model.ActionModel">
+    <id column="AID" jdbcType="INTEGER" property="aid" />
+    <result column="PAID" jdbcType="INTEGER" property="paid" />
+    <result column="SORTID" jdbcType="INTEGER" property="sortid" />
+    <result column="ADESCRIBE" jdbcType="VARCHAR" property="adescribe" />
+    <result column="AWINDOW" jdbcType="VARCHAR" property="awindow" />
+    <result column="NAVIGATEURL" jdbcType="VARCHAR" property="navigateurl" />
+    <result column="PARM" jdbcType="VARCHAR" property="parm" />
+    <result column="VERSION" jdbcType="VARCHAR" property="version" />
+    <result column="ACTIONTYPE" jdbcType="VARCHAR" property="actiontype" />
+    <result column="CAREA" jdbcType="VARCHAR" property="carea" />
+    <result column="CISVISIBLE" jdbcType="VARCHAR" property="cisvisible" />
+    <result column="ROLE" jdbcType="INTEGER" property="role" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    AID, PAID, SORTID, ADESCRIBE, AWINDOW, NAVIGATEURL, PARM, VERSION, ACTIONTYPE, CAREA, 
+    CISVISIBLE, ROLE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from css_action
+    where AID = #{aid,jdbcType=INTEGER}
+  </select>
+  <select id="selectByUserKey" parameterType="java.lang.String" resultMap="BaseResultMap" flushCache="false" useCache="false">
+    select 
+    <include refid="Base_Column_List" />
+    from css_action
+    where aid = #{aid}
+    order by aid
+  </select>
+ <select id="selectAll" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from css_action
+  </select>
+ <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from css_action
+    where AID = #{aid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.admin.action.model.ActionModel">
+    insert into css_action (AID, PAID, SORTID, 
+      ADESCRIBE, AWINDOW, NAVIGATEURL, 
+      PARM, VERSION, ACTIONTYPE, 
+      CAREA, CISVISIBLE, ROLE
+      )
+    values (#{aid,jdbcType=INTEGER}, #{paid,jdbcType=INTEGER}, #{sortid,jdbcType=INTEGER}, 
+      #{adescribe,jdbcType=VARCHAR}, #{awindow,jdbcType=VARCHAR}, #{navigateurl,jdbcType=VARCHAR}, 
+      #{parm,jdbcType=VARCHAR}, #{version,jdbcType=VARCHAR}, #{actiontype,jdbcType=VARCHAR}, 
+      #{carea,jdbcType=VARCHAR}, #{cisvisible,jdbcType=VARCHAR}, #{role,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.admin.action.model.ActionModel">
+    insert into css_action
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="aid != null">
+        AID,
+      </if>
+      <if test="paid != null">
+        PAID,
+      </if>
+      <if test="sortid != null">
+        SORTID,
+      </if>
+      <if test="adescribe != null">
+        ADESCRIBE,
+      </if>
+      <if test="awindow != null">
+        AWINDOW,
+      </if>
+      <if test="navigateurl != null">
+        NAVIGATEURL,
+      </if>
+      <if test="parm != null">
+        PARM,
+      </if>
+      <if test="version != null">
+        VERSION,
+      </if>
+      <if test="actiontype != null">
+        ACTIONTYPE,
+      </if>
+      <if test="carea != null">
+        CAREA,
+      </if>
+      <if test="cisvisible != null">
+        CISVISIBLE,
+      </if>
+      <if test="role != null">
+        ROLE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="aid != null">
+        #{aid,jdbcType=INTEGER},
+      </if>
+      <if test="paid != null">
+        #{paid,jdbcType=INTEGER},
+      </if>
+      <if test="sortid != null">
+        #{sortid,jdbcType=INTEGER},
+      </if>
+      <if test="adescribe != null">
+        #{adescribe,jdbcType=VARCHAR},
+      </if>
+      <if test="awindow != null">
+        #{awindow,jdbcType=VARCHAR},
+      </if>
+      <if test="navigateurl != null">
+        #{navigateurl,jdbcType=VARCHAR},
+      </if>
+      <if test="parm != null">
+        #{parm,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="actiontype != null">
+        #{actiontype,jdbcType=VARCHAR},
+      </if>
+      <if test="carea != null">
+        #{carea,jdbcType=VARCHAR},
+      </if>
+      <if test="cisvisible != null">
+        #{cisvisible,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+        #{role,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.admin.action.model.ActionModel">
+    update css_action
+    <set>
+      <if test="paid != null">
+        PAID = #{paid,jdbcType=INTEGER},
+      </if>
+      <if test="sortid != null">
+        SORTID = #{sortid,jdbcType=INTEGER},
+      </if>
+      <if test="adescribe != null">
+        ADESCRIBE = #{adescribe,jdbcType=VARCHAR},
+      </if>
+      <if test="awindow != null">
+        AWINDOW = #{awindow,jdbcType=VARCHAR},
+      </if>
+      <if test="navigateurl != null">
+        NAVIGATEURL = #{navigateurl,jdbcType=VARCHAR},
+      </if>
+      <if test="parm != null">
+        PARM = #{parm,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        VERSION = #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="actiontype != null">
+        ACTIONTYPE = #{actiontype,jdbcType=VARCHAR},
+      </if>
+      <if test="carea != null">
+        CAREA = #{carea,jdbcType=VARCHAR},
+      </if>
+      <if test="cisvisible != null">
+        CISVISIBLE = #{cisvisible,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+        ROLE = #{role,jdbcType=INTEGER},
+      </if>
+    </set>
+    where AID = #{aid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.admin.action.model.ActionModel">
+    update css_action
+    set PAID = #{paid,jdbcType=INTEGER},
+      SORTID = #{sortid,jdbcType=INTEGER},
+      ADESCRIBE = #{adescribe,jdbcType=VARCHAR},
+      AWINDOW = #{awindow,jdbcType=VARCHAR},
+      NAVIGATEURL = #{navigateurl,jdbcType=VARCHAR},
+      PARM = #{parm,jdbcType=VARCHAR},
+      VERSION = #{version,jdbcType=VARCHAR},
+      ACTIONTYPE = #{actiontype,jdbcType=VARCHAR},
+      CAREA = #{carea,jdbcType=VARCHAR},
+      CISVISIBLE = #{cisvisible,jdbcType=VARCHAR},
+      ROLE = #{role,jdbcType=INTEGER}
+    where AID = #{aid,jdbcType=INTEGER}
+  </update>
+</mapper>

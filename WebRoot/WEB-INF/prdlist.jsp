@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<title>精品线路</title>
 	 <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
-	 <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
-	 <script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
+	 <script type="text/javascript" src="http://cdn.wdl666.cn/js/vue.js"></script>
+	 <script src="http://cdn.wdl666.cn/js/vue-resource.min.js"></script>
 </head>
 <style type="text/css">
 body{background:#eeeeee}

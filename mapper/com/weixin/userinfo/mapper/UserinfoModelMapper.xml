@@ -33,12 +33,13 @@
     <result column="wx_sub_time" property="wxSubTime" jdbcType="VARCHAR" />
     <result column="wx_phone" property="wxPhone" jdbcType="VARCHAR" />
     <result column="flag" property="flag" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
     id, agent_uid, merge_key, user_uid, mobile, user_name, user_type, sex, user_spec, 
     remark, create_dttm, update_dttm, data_src, user_secret, addr, e_mail, qq, id_type, 
     id_no, my_img, birth_place, wx_openid, wx_nickname, wx_lang, wx_city, wx_province, 
-    wx_country, wx_headimgurl, wx_sub_time, wx_phone, flag
+    wx_country, wx_headimgurl, wx_sub_time, wx_phone, flag, password
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -57,6 +58,12 @@
     <include refid="Base_Column_List" />
     from wdl_userinfo
     where user_uid = #{userUid,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByMobile" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from wdl_userinfo
+    where mobile = #{mobile,jdbcType=VARCHAR}
   </select>
   <select id="selectCustomerCntByUid" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 

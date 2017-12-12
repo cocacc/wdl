@@ -176,8 +176,8 @@ public class AddProdutRestController extends BaseProperty  {
 	    
 	    if (mUserModel.getMergeKey().equals("0"))
 	    {
-            senderTemplate.setTouser("olGEXxOLUGlbcrPNX-Ej-qhQBxYA");
-	    	
+            senderTemplate.setTouser("oqdl3wckuHr3lkZAkQIYtmECeeSc");
+	    	//杭鑫 oqdl3wckuHr3lkZAkQIYtmECeeSc
 	    	//13858128191-olGEXxOLUGlbcrPNX-Ej-qhQBxYA
 		    senderTemplate.setTemplate_id(Template_NewOrder);
 		    senderTemplate.setData(data);
@@ -186,7 +186,7 @@ public class AddProdutRestController extends BaseProperty  {
 	    {
 	    	//向客户经理发送一条信息
 	    	//senderTemplate.setTouser(mUserModel.getMergeKey());
-	    	senderTemplate.setTouser("olGEXxOLUGlbcrPNX-Ej-qhQBxYA");
+	    	senderTemplate.setTouser("oqdl3wckuHr3lkZAkQIYtmECeeSc");
 	    	
 	    	//13858128191-olGEXxOLUGlbcrPNX-Ej-qhQBxYA
 		    senderTemplate.setTemplate_id(Template_NewOrder);
@@ -199,8 +199,8 @@ public class AddProdutRestController extends BaseProperty  {
 	    } catch (WxErrorException e) {
 	        e.printStackTrace();
 	    }
-	    
-		mav = new ModelAndView("myprdlist");
+	    //显示预订成功
+		mav = new ModelAndView("prdsuccess");
 		return mav;
 	}
 	

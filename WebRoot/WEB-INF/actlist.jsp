@@ -19,15 +19,18 @@ body{background:#eeeeee}
 </head>
 <body>
 	<ul>
-        <li><a href="http://mp.weixin.qq.com/s/m-t3B85hh7-a-rg7ksTiPQ"><img src="/wdl/static/act/eluosi-1.jpg"></a></li>
-        <li><a href="http://mp.weixin.qq.com/s/PULgOHAeCvvi74Jy0X-kSA"><img src="/wdl/static/act/eluosi-2.jpg"></a></li>
-        <li><a href="http://mp.weixin.qq.com/s/9MOz3YXJWdxWrbVCLU-9-Q"><img src="/wdl/static/act/eluosi-3.jpg"></a></li>
-        <li><a href="http://mp.weixin.qq.com/s/fl6xy2dW5syjMgStSEoYNA"><img src="/wdl/static/act/qiangtangjiadaqiao-1.jpg"></a></li>
-        <li><a href="http://mp.weixin.qq.com/s/y1d9zzbt5eZtEXVb_jYHNQ"><img src="/wdl/static/act/qiangtangjiadaqiao-2.jpg"></a></li>
-        <li><a href="http://mp.weixin.qq.com/s/ykcuGWZuVEfqlDxrFqfLsA"><img src="/wdl/static/act/suhang-1.jpg"></a></li>
-        <li><a href="http://mp.weixin.qq.com/s/cRY2cN3F0IRUXiNukmQxoA"><img src="/wdl/static/act/suhang-2.jpg"></a></li>
-        <li><a href="http://mp.weixin.qq.com/s/xuirLQYsA6vnQhEin05sfQ"><img src="/wdl/static/act/xinjiang-1.jpg"></a></li>
-        <li><a href="http://mp.weixin.qq.com/s/ZweLqsX78rP1kSGFFDlDbg"><img src="/wdl/static/act/xinjiang-2.jpg"></a></li>
+        <li><a href="https://mp.weixin.qq.com/s/uPZJd_oV28D1QyLWFI60Aw"><img src="https://t1.picb.cc/uploads/2017/10/26/qOopF.jpg"></a></li>
+        <li><a href="https://mp.weixin.qq.com/s/j1qr81v_6g2_s54zEbOTAQ"><img src="https://t1.picb.cc/uploads/2017/10/26/qWydr.jpg"></a></li>
+
+        <li><a href="http://mp.weixin.qq.com/s/m-t3B85hh7-a-rg7ksTiPQ"><img src="https://t1.picb.cc/uploads/2017/10/23/WSVgN.jpg"></a></li>
+        <li><a href="http://mp.weixin.qq.com/s/PULgOHAeCvvi74Jy0X-kSA"><img src="https://t1.picb.cc/uploads/2017/10/23/WSgHe.jpg"></a></li>
+        <li><a href="http://mp.weixin.qq.com/s/9MOz3YXJWdxWrbVCLU-9-Q"><img src="https://t1.picb.cc/uploads/2017/10/23/WS2PK.jpg"></a></li>
+        <li><a href="http://mp.weixin.qq.com/s/fl6xy2dW5syjMgStSEoYNA"><img src="https://t1.picb.cc/uploads/2017/10/23/WStd7.jpg"></a></li>
+        <li><a href="http://mp.weixin.qq.com/s/y1d9zzbt5eZtEXVb_jYHNQ"><img src="https://t1.picb.cc/uploads/2017/10/23/WSwC6.jpg"></a></li>
+        <li><a href="http://mp.weixin.qq.com/s/ykcuGWZuVEfqlDxrFqfLsA"><img src="https://t1.picb.cc/uploads/2017/10/23/WSf3T.jpg"></a></li>
+        <li><a href="http://mp.weixin.qq.com/s/cRY2cN3F0IRUXiNukmQxoA"><img src="https://t1.picb.cc/uploads/2017/10/23/WSiIt.jpg"></a></li>
+        <li><a href="http://mp.weixin.qq.com/s/xuirLQYsA6vnQhEin05sfQ"><img src="https://t1.picb.cc/uploads/2017/10/23/WSnOF.jpg"></a></li>
+        <li><a href="http://mp.weixin.qq.com/s/ZweLqsX78rP1kSGFFDlDbg"><img src="https://t1.picb.cc/uploads/2017/10/23/WSeRr.jpg"></a></li>
         
     </ul>
 </body>

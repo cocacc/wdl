@@ -2,3 +2,6 @@ eclipse.preferences.version=1
 encoding//WebRoot/WEB-INF/myInfo2.jsp=UTF-8
 encoding//WebRoot/WEB-INF/product/suzhou/suzhou.jsp=UTF-8
 encoding//WebRoot/WEB-INF/success.jsp=UTF-8
+encoding//model/com/admin/action/model/ModelActionBase.java=GBK
+encoding//model/com/admin/action/model/ModelActionUnit.java=GBK
+encoding//model/com/admin/action/model/ModelMobiAction.java=GBK

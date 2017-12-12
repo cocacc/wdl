@@ -55,7 +55,7 @@ public class GetProductDetailController {
 			mav =new ModelAndView("product/"+mProductDetailModel.getPageName()+"/"+mProductDetailModel.getPageName());
 			//加入参数 //"'/wdl/addProduct?id="+mProductDetailModel.getPrdUid()+"'";
 			String mParam = 
-			"'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe1aae2706bb9023d&redirect_uri=http%3A%2F%2Fwdl666.com%2Fwdl%2FaddProduct?id="+mProductDetailModel.getPrdUid()+"&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect'";
+			"'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxded002881efc112a&redirect_uri=http%3A%2F%2Fwdl666.cn%2Fwdl%2FaddProduct?id="+mProductDetailModel.getPrdUid()+"&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect'";
 			
 			
 			mav.addObject("AddPrdUid",mParam);

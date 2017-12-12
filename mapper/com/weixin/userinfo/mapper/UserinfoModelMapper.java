@@ -15,6 +15,8 @@ public interface UserinfoModelMapper {
     
     UserinfoModel selectByUserUid(String userUid);
     
+    UserinfoModel selectByMobile(String phone);
+    
     UserinfoModel selectCustomerCntByUid(String userUid);
     
     int updateByPrimaryKeySelective(UserinfoModel record);

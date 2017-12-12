@@ -43,43 +43,49 @@
             "sub_button": [
                 {
                     "type": "view", 
-                    "name": "俄罗斯（红场阅兵）", 
-                    "url": "http://mp.weixin.qq.com/s/m-t3B85hh7-a-rg7ksTiPQ", 
-                    "sub_button": [
-                        {
-                            "type": "view", 
-                            "name": "俄罗斯（红场阅兵）", 
-                            "url": "http://mp.weixin.qq.com/s/m-t3B85hh7-a-rg7ksTiPQ"
-                        }, 
-                        {
-                            "type": "view", 
-                            "name": "俄罗斯（经典永恒）", 
-                            "url": "http://mp.weixin.qq.com/s/PULgOHAeCvvi74Jy0X-kSA"
-                        }
-                    ]
+                    "name": "《追捕》背后", 
+                    "url": "https://mp.weixin.qq.com/s?__biz=MzI0NTg1NzE5Mw==&mid=2247484016&idx=1&sn=c11edf452029e2e5229414aa326f8663&chksm=e9496cb6de3ee5a0d55cb7d5c8ff743502b5c869ddd784d338ae42223fcec271128faf16e2fe&scene=38#wechat_redirect" 
+                    
                 }, 
                 {
                     "type": "view", 
-                    "name": "俄罗斯（经典永恒）", 
-                    "url": "http://mp.weixin.qq.com/s/PULgOHAeCvvi74Jy0X-kSA"
+                    "name": "清迈青莱(1)", 
+                    "url": "https://mp.weixin.qq.com/s?__biz=MzI0NTg1NzE5Mw==&mid=2247483857&idx=1&sn=555790fe74747ef27e5e40a06ca0d431&chksm=e9496f17de3ee60197d4c42dab11c5e55c2f9ac0555d0c65d7a77dcac136061479183c00f35c&scene=38#wechat_redirect"
                 }, 
                 {
                     "type": "view", 
-                    "name": "俄罗斯（寻找记忆）", 
-                    "url": "http://mp.weixin.qq.com/s/9MOz3YXJWdxWrbVCLU-9-Q"
+                    "name": "苏杭诗词楹联鉴赏", 
+                    "url": "https://mp.weixin.qq.com/s?__biz=MzI0NTg1NzE5Mw==&mid=2247483966&idx=1&sn=cfe48aea7b3112ec56e15e6a6349f641&chksm=e9496cf8de3ee5ee4624a0a103b079acaf935cd16a38a3c25672789e72d7d63394be46bfc607&scene=38#wechat_redirect"
                 }, 
                 {
                     "type": "view", 
-                    "name": "钱江大桥（临危受命）", 
-                    "url": "http://mp.weixin.qq.com/s/fl6xy2dW5syjMgStSEoYNA"
+                    "name": "​​​走进迪拜", 
+                    "url": "https://mp.weixin.qq.com/s?__biz=MzI0NTg1NzE5Mw==&mid=2247483984&idx=1&sn=0b730c7a34c46ae3f2b781fbce8a0eaa&chksm=e9496c96de3ee58026a8ad169ab1844cc74f4935e3c2838281c6c68eb5e539a666a0471a5c87&scene=38#wechat_redirect"
                 }, 
                 {
                     "type": "view", 
                     "name": "更多精彩节目", 
-                    "url": "http://wdl666.cn/wdl/getActListMenu"
+                    "url": "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI0NTg1NzE5Mw==&scene=124#wechat_redirect"
                 }
             ]
         }, 
+        {
+            "name": "出行线路", 
+            "sub_button": [
+                {
+                    "type": "view", 
+                    "name": "精品线路", 
+                    "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxded002881efc112a&redirect_uri=http%3A%2F%2Fwdl666.cn%2Fwdl%2FGetProductMenu&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect", 
+                    "sub_button": [ ]
+                },
+                {
+                    "type": "view", 
+                    "name": "泰国注意事项", 
+                    "url": "http://http://wdl666.cn/wdl/TaiguoManualMenu", 
+                    "sub_button": [ ]
+                }
+            ]
+        },
         {
             "name": "我的", 
             "sub_button": [
@@ -118,3 +124,5 @@ http://wdl666.com/wdl/Validate/doValidate
 
 //
 https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe1aae2706bb9023d&redirect_uri=http%3A%2F%2Fwdl666.com%2Fwdl%2FMyInfoMenu&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect
+
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxded002881efc112a&redirect_uri=http%3A%2F%2Fwdl666.cn%2Fwdl%2FGetProductMenu&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect

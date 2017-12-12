@@ -158,5 +158,10 @@
      <property name="sqlSessionFactory" ref="sqlSessionFactory" />
      <property name="mapperInterface" value="com.weixin.productdetail.mapper.ProductDetailModelMapper" />
    </bean> 
+   
+   <bean id="Mapper_action" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+     <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+     <property name="mapperInterface" value="com.admin.action.mapper.ActionModelMapper" />
+   </bean> 
 </beans> 
 
